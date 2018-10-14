@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>下拉菜单2</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
+</head>
+<body>
+	<div class="dropdown" id="mydropdown">
+		<button class="btn btn-default" id="dLabel" type="button" data-toggle="dropdown">
+			下拉菜单
+			<span class="caret">
+				
+			</span>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li>已</li>
+			<li>已</li>
+			<li>已</li>
+			<li>已</li>
+		</ul>
+	</div>
+	<script src="../jquery-3.3.1.min.js"></script>
+	<script src="../bootstrap.min.js"></script>
+	<script>
+		$("#mydropdown").on("shown.bs.dropdown", function(e){
+			alert("hello");
+		})
+	</script>
+</body>
+</html>

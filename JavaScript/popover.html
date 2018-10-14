@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>弹出框</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<button type="button" class="btn btn-default js-popover" data-placement="bottom" data-toggle="popover" title="标题" data-content="这里是内容" data-triger="focus" data-animation="false">弹出框</button>
+	</div>
+	<script src="../jquery-3.3.1.min.js"></script>
+	<script src="../bootstrap.min.js"></script>
+	<script>
+		$(".js-popover").popover();
+		$(".js-popover").popover("show");
+		$(".js-popover").on("hidden.bs.popover",function(e){
+			alert("hello");
+		});
+	</script>
+</body>
+</html>

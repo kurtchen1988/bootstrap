@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>标签页</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+			<li><a href="#profile" data-toggle="tab">Profile</a></li>
+			<li class="dropdown">
+				<a href="#" id="myTabdrop1" class="dropdown-toggle" data-toggle="dropdown">下拉菜单 <b class="caret"></b></a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#one" tabindex="-1" data-toggle="tab">one</a></li>
+					<li><a href="#two" tabindex="-1" data-toggle="tab">two</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div id="MyTabContent" class="tab-content">
+			<div class="tab-pane fade in active" id="home">
+				<p>Hello Welcome to the college!!</p>
+				<p>Hello Welcome to the college!!</p>
+				<p>Hello Welcome to the college!!</p>
+				<p>Hello Welcome to the college!!</p>
+			</div>
+			<div class="tab-pane fade" id="profile">
+				<p>okokokHello Welcome to the college!!</p>
+				<p>sdfsdHello Welcome to the college!!</p>
+				<p>okokokkHello Welcome to the college!!</p>
+				<p>asdfsadHello Welcome to the college!!</p>
+			</div>
+			<div class="tab-pane fade" id="one">
+				<p>ONE Welcome to the college!!</p>
+				<p>sdfsdHello Welcome to the college!!</p>
+				<p>okokokkHello Welcome to the college!!</p>
+				<p>asdfsadHello Welcome to the college!!</p>
+			</div>
+			<div class="tab-pane fade" id="two">
+				<p>TWO Welcome to the college!!</p>
+				<p>sdfsdHello Welcome to the college!!</p>
+				<p>okokokkHello Welcome to the college!!</p>
+				<p>asdfsadHello Welcome to the college!!</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="../jquery-3.3.1.min.js"></script>
+	<script src="../bootstrap.min.js"></script>
+	<script>
+		$("#myTab a:last").tab("show");
+		$("#myTab li:eq(1) a").tab("show");
+		$('a[data-toggle="tab"]').on("shown.bs.tab", function(e){
+			alert("swtiched");
+		})
+	</script>
+</body>
+</html>
