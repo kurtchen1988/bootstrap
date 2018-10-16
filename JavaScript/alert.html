@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>警告信息</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="alert alert-info fade in" id="myalert">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>极客学院</strong>欢迎您的到来
+		</div>
+	</div>
+	<div class="alert alert-info fade in" id="myalert1">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<strong>Geek College</strong> welcomes you
+		<button type="button" class="btn btn-primary">详情</button>
+	</div>
+
+<script src="../jquery-3.3.1.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+<script>
+	$("#myalert").alert("close");
+	$("#myalert1").on("close.bs.alert", function(e){
+		console.log("触发了");
+	})
+</script>
+</body>
+</html>
