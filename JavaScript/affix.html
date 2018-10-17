@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>侧边栏停靠</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
+	<style>
+		.affixed-element-top.affix{
+			top:10px;
+		}
+		.affixed-element-top.affix-bottom{
+			position: relative;
+		}
+		.affixed-element-bottom.affix{
+			bottom: 10px;
+		}
+		.affixed-element-bottom.affix-bottom{
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		
+			<div class="col-md-3">
+				<ul class="list-group affixed-element-top js-affixed-element-top">
+					<li class="list-group-item">大家好我是xxxx</li>
+					<li class="list-group-item">大家好我是xxxx</li>
+					<li class="list-group-item">大家好我是xxxx</li>
+					<li class="list-group-item">大家好我是xxxx</li>
+					<li class="list-group-item">大家好我是xxxx</li>
+					<li class="list-group-item">大家好我是xxxx</li>
+					<li class="list-group-item">大家好我是xxxx</li>
+					<li class="list-group-item">大家好我是xxxx</li>
+					<li class="list-group-item">大家好我是xxxx</li>
+					<li class="list-group-item">大家好我是xxxx</li>
+				</ul>
+			</div>
+		<div class="col-md-6 js-content">
+			<p>原标题:G7对失踪记者案表担忧 敦促沙特将罪犯绳之以法</p>
+			<p>海外网10月17日电 日前，沙特记者失踪一案扑朔迷离，引发外交风波。七国集团（G7）外长于本周三（17日）发表书面声明，对沙特记者失踪一事表示担忧。</p>
+			<p>据土耳其安纳多卢通讯社17日报道，加拿大、法国、德国、意大利、日本、英国和美国的外交部长和欧盟高级代表在一份书面声明中重申了“捍卫言论自由和保护新闻自由的承诺”。</p>
+			<p>声明表示，“我们仍然对知名沙特记者卡舒吉的失踪感到非常不安。那些对他的失踪负有责任的人必须被绳之以法”。</p>
+			<p>七国进一步鼓励土耳其与沙特合作调查失踪记者一案，并表示他们“期待沙特像其宣布的那样，进行彻底、可信、透明和迅速的调查”。</p>
+			<p>图为卡舒吉进入总领馆的最后画面。（图源：美国有线电视新闻网）</p>
+			<p>周一（15日），土耳其和沙特官员对失踪记者一案展开联合调查，并对沙特驻伊斯坦布尔领事馆进行了搜查。</p>
+			<p>据海外网此前报道，10月2日下午，哈苏吉进入沙特驻伊斯坦布尔领事馆领取结婚相关资料，此后便“人间蒸发”再未露面。亲土耳其政府的媒体10日公开了由15名沙特人组成的“神秘暗杀队”成员照片，称哈苏吉已遭杀害。土耳其政府也告知美国官员，他们掌握了音频和视频证据，能证明哈苏吉一走进领事馆就遭到拘禁，并被杀害分尸。</p>
+			<p>《华盛顿邮报》记者哈苏吉疑在土耳其遇害一案引发各界关注。（图源：路透社）</p>
+			<p>对于相关指控，沙特当局早前予以坚决否认，多次表示哈苏吉在2日当天就离开领事馆，并未被沙特扣留。沙特内政部长还在13日回应称，有关沙特领导人下令暗杀哈苏吉的说法是“谎言和毫无根据的指控”，沙特并不知道这位记者的下落，并且和其他人一样想要找到他。美国有线电视新闻网（CNN）15日报道称，沙特政府正准备承认，失踪的沙特记者哈苏吉因“审讯不当”死亡。</p>
+		</div>
+		<div class="col-md-3">
+			<ul class="list-group affixed-element-bottom js-affixed-element-bottom">
+				<li class="list-group-item">hello大家好我是xxxx</li>
+				<li class="list-group-item">hello大家好我是xxxx</li>
+				<li class="list-group-item">hello大家好我是xxxx</li>
+				<li class="list-group-item">hello大家好我是xxxx</li>
+				<li class="list-group-item">hello大家好我是xxxx</li>
+				<li class="list-group-item">hello大家好我是xxxx</li>
+			</ul>
+		</div>
+	</div>
+<script src="../jquery-3.3.1.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+<script>
+	$(function(){
+		$(".js-affixed-element-top").affix({
+			offset:{
+
+			}
+		})
+		$(".js-affixed-element-bottom").affix({
+			offset:{
+				bottom:200
+			}
+		})
+	})
+</script>
+</body>
+</html>
