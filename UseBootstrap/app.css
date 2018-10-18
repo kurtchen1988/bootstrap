@@ -1,6 +1,32 @@
 h1, h3, p, a, button{
 	font-family: "Times New Roman",Georgia,Serif;
 }
+.side-nav{
+	position: fixed;
+	top: 45%
+	right:20px;
+	z-index: 1;
+}
+.side-nav ul.nav-side-nav{
+	text-align: center;
+	list-style: none;
+	margin:0
+	padding-right:0;
+}
+.side-nav ul.nav-side-nav >li{
+	display: block;
+	line-height: 1.45em;
+	margin:0;
+	padding: 8px 0;
+}
+.side-nav ul.nav-side-nav >li >a{
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #e2e2e2;
+}
+
 .onepage{
 	height: 750px;
 }
@@ -27,4 +53,190 @@ h1, h3, p, a, button{
 }
 .headfontsize p{
 	color: #ffffff;
+}
+.twopage{
+	padding: 2px 0 0 2px;
+	height: auto;
+	background-image: url("image/timg.jpg");
+	position: relative;
+}
+.twopage-text{
+	width: 100%;
+	text-align: center;
+}
+.twopage-text-h1{
+	margin-left: 120px;
+	letter-spacing: 2px;
+	margin-top: 80px;
+	margin-bottom: 0;
+	padding: 20px 0 0 0;
+}
+.twopage-text-h1 img{
+	width: 120px;
+	margin-top: -20px;
+}
+.twopage .row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.towpage-courses{
+	float: left;
+	background: #ffffff;
+	padding: 0 2px 2px 0;
+	position: relative;
+	overflow: hidden;
+}
+.towpage-courses >a{
+	width: 100%;
+	height: 100%;
+	float: left;
+	text-align:center;
+	position: relative;
+}
+.classicon h3{
+	margin-top: 120px;
+	color: #d1e973;
+}
+.classicon h1{
+	color: #fff5e1;
+}
+.classicon{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #fff;
+	opacity: 0;
+}
+.classicon:hover{
+	background: #leb450;
+	opacity: 0.9;
+	transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	text-align: center;
+}
+.twopagebtn{
+	width: 100%;
+	margin:0% auto;
+	text-align: center;
+}
+.twopagebtn .btn-lg{
+	font-size: 25px;
+}
+#towpage-easy{
+	margin:50px 0;
+	margin-bottom: 100px;
+}
+.threepage{
+	position: absolute;
+	width: 100%;
+	height: 800px;
+}
+.threepage-bg{
+	position: absolute;
+	height: 100%
+	weight:100%;
+	background-position:center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#threepagebg{
+	background-image: url("image/timg.jpg");
+}
+.treepagecontent{
+	width: 100%
+	margin: 0 auto;
+	text-align: center;
+}
+.treepagetext{
+	margin-top: 100px;
+}
+.treepagetext p{
+	margin-top: 20px;
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 32px;
+}
+.threepagebtncontent{
+	margin-top: 450px;
+	font-size: 25px;
+}
+.fourpage{
+	height: 700px;
+	background-image: url("image/timg.jpg");
+	margin-top: 800px;
+}
+.coursexingqing-text{
+	color: #ffffff;
+	margin-top: 100px;
+	width: 100%;
+	text-align: center;
+}
+.coursexingqing-text p{
+	margin-top: 25px;
+	font-size: 20px;
+}
+.fourpage .container .carousel{
+	margin-top: 100px;
+}
+.carousel-control .left{
+	    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,0)));
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,0)));
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    left: -20%;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    right: -20%;
+}
+.fivepage-bg{
+	height: 800px;
+	width: 100%;
+	position: absolute;
+	background-position: center center;
+	background-size: cover;
+}
+#fivepage{
+	background-image: url("image/timg.jpg");
+}
+.footertext{
+	margin-top: 55px;
+	width: 100%;
+	color: #ffffff;
+	font-size: 20px;
+	text-align: center;
+}
+.footerbtncenter{
+	margin-top:100px;
+	text-align: center;
+}
+.queyeicon{
+	width: 200px;
+}
+.queyeicon:hover{
+	border: 2px solid #d9edf7;
+}
+.footertextbtn{
+	margin-top: 150px;
+	width: 100%;
+	text-align: center;
+}
+.footertextbtn-text{
+	margin-top: 20px;
+	color: #000000;
 }
